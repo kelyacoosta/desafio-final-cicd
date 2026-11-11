@@ -47,13 +47,13 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Criar pasta dist
-        run: mkdir -p dist
+        run: mkdir -p build
 
       - name: Copiar arquivos
-        run: cp index.html style.css dist/
+        run: cp index.html style.css build/
 
       - name: Confirmar entrega
-        run: ls -la dist
+        run: ls -la build
 
       - name: Upload do artefato
         uses: actions/upload-artifact@v4
